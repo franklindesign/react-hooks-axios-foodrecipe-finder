@@ -1,0 +1,46 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  font-size: 24px;
+  outline: none;
+}
+input[type="text"] {
+  width: 150px;
+
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+input[type="text"]:focus {
+  width: 250px;
+  font-size: 24px;
+}
+input:focus {
+  background-color: $inputBg;
+}
+
+.search-form {
+  min-height: 10vh;
+  @include flexCenter();
+}
+
+.search-bar {
+  width: 25%;
+  padding: 10px;
+  height: 24px;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 2px solid $searchBtnColor;
+}
+
+.search-button {
+  border: none;
+  font-size: 24px;
+  padding: 9px;
+  background-color: $searchBtnColor;
+  color: $textDark;
+}

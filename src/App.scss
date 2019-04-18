@@ -1,0 +1,22 @@
+$whiteBg: #ffffff;
+$inputBg: #f5eaff;
+$searchBtnColor: #8a2ce2;
+$textDark: #f5eaff;
+
+@import "./search";
+
+.App {
+  min-height: 100vh;
+  background-color: $whiteBg;
+}
+
+.siteTitle {
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+}
+.recipes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
